@@ -1,20 +1,21 @@
 module ChurchBool where
 
--- Alias de tipo para los booleanos de Church
+
 type ChurchBool = forall a. a -> a -> a
 
--- Church booleans
+
 true :: ChurchBool
 true = \x y -> x
+
 
 false :: ChurchBool
 false = \x y -> y
 
--- ifThenElse
+
 ifThenElse :: ChurchBool -> a -> a -> a
 ifThenElse = \b x y -> b x y
 
--- Logical operations
+
 churchAnd :: ChurchBool -> ChurchBool -> ChurchBool
 churchAnd = \a b -> a b false
 
@@ -24,11 +25,11 @@ churchOr = \a b -> a true b
 churchNot :: ChurchBool -> ChurchBool
 churchNot = \a -> a false true
 
--- Converts a Church boolean to a string
+
 showBool :: ChurchBool -> String
 showBool b = b "True" "False"
 
--- Run tests
+
 test :: IO ()
 test = do
   putStrLn $ "true AND false = " ++ showBool (churchAnd true false)
