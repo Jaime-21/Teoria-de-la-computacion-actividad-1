@@ -1,7 +1,9 @@
+{-# LANGUAGE RankNTypes #-}
+
 module ChurchBool where
 
-
 type ChurchBool = forall a. a -> a -> a
+
 
 
 true :: ChurchBool

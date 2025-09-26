@@ -46,12 +46,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\bin"
-libdir     = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\lib\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0-7ov3tHp8oRlJZaDrW2OLVs-teoria-de-la-computacion"
-dynlibdir  = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\lib\\x86_64-windows-ghc-9.10.2-cea6"
-datadir    = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\share\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0"
-libexecdir = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\libexec\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0"
-sysconfdir = "C:\\Users\\USUARIO\\OneDrive\\Documentos\\teoria de la computacion\\teoria-de-la-computacion\\.stack-work\\install\\15e38e99\\etc"
+bindir     = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\bin"
+libdir     = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\lib\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0-7ov3tHp8oRlJZaDrW2OLVs-teoria-de-la-computacion"
+dynlibdir  = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\lib\\x86_64-windows-ghc-9.10.2-cea6"
+datadir    = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\share\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0"
+libexecdir = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\libexec\\x86_64-windows-ghc-9.10.2-cea6\\teoria-de-la-computacion-0.1.0.0"
+sysconfdir = "C:\\Users\\USUARIO\\IdeaProjects\\Teoria-de-la-computacion-actividad-1\\.stack-work\\install\\15e38e99\\etc"
 
 getBinDir     = catchIO (getEnv "teoria_de_la_computacion_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "teoria_de_la_computacion_libdir")     (\_ -> return libdir)

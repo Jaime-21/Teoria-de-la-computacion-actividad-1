@@ -1,5 +1,6 @@
 module Main (main) where
 
+import ChurchBool
+
 main :: IO ()
-main = do
-  putStrLn "hello world"
+main = test
